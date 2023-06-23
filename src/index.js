@@ -39,4 +39,58 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+//console.log('project wired!')
+
+document.querySelector("#logo-img").src = siteContent["images"]["logo-img"]
+
+const nav=document.querySelectorAll('nav a')
+
+nav[0].className = "nav-item-1"
+nav[0].textContent = siteContent["nav"]["nav-item-1"]
+nav[1].className = "nav-item-2"
+nav[1].textContent = siteContent["nav"]["nav-item-2"]
+nav[2].className = "nav-item-3"
+nav[2].textContent = siteContent["nav"]["nav-item-3"]
+nav[3].className = "nav-item-4"
+nav[3].textContent = siteContent["nav"]["nav-item-4"]
+nav[4].className = "nav-item-5"
+nav[4].textContent = siteContent["nav"]["nav-item-5"]
+nav[5].className = "nav-item-6"
+nav[5].textContent = siteContent["nav"]["nav-item-6"]
+nav.forEach(item=>{
+  item.className ="italic"
+  
+})
+
+
+const sectionH1 = document.querySelector(".cta-text h1")
+const sectionButton = document.querySelector(".cta-text button")
+sectionH1.textContent = siteContent["cta"]["h1"]
+sectionButton.textContent = siteContent["cta"]["button"]
+
+let line = document.querySelector("#cta-img")
+line.src = siteContent["images"]["cta-img"]
+
+document.querySelector(".top-content .text-content:nth-of-type(1) h4").textContent = siteContent["main-content"]["features-h4"]
+document.querySelector(".top-content .text-content:nth-of-type(1) p").textContent = siteContent["main-content"]["features-content"]
+
+document.querySelector(".top-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["about-h4"]
+document.querySelector(".top-content .text-content:nth-of-type(2) p").textContent = siteContent["main-content"]["about-content"]
+
+document.querySelector("#middle-img").src = siteContent["images"]["accent-img"]
+
+document.querySelector(".bottom-content .text-content:nth-of-type(1) h4").textContent = siteContent["main-content"]["services-h4"]
+document.querySelector(".bottom-content .text-content:nth-of-type(1) p").textContent = siteContent["main-content"]["services-content"]
+document.querySelector(".bottom-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["product-h4"]
+document.querySelector(".bottom-content .text-content:nth-of-type(2) p").textContent = siteContent["main-content"]["product-content"]
+document.querySelector(".bottom-content .text-content:nth-of-type(3) h4").textContent = siteContent["main-content"]["vision-h4"]
+document.querySelector(".bottom-content .text-content:nth-of-type(3) p").textContent = siteContent["main-content"]["vision-content"]
+
+
+document.querySelector(".contact h4").textContent = siteContent["contact"]["contact-h4"]
+document.querySelector(".contact p:nth-of-type(1)").textContent = siteContent["contact"]["address"]
+document.querySelector(".contact p:nth-of-type(2)").textContent = siteContent["contact"]["phone"]
+document.querySelector(".contact p:nth-of-type(3)").textContent = siteContent["contact"]["email"]
+document.querySelector("footer a").textContent=siteContent["footer"]["copyright"]
+const footers=document.querySelector("footer a")
+footers.className="bold"
